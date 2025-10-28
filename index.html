@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message in a Bottle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="audioPlayer" loop>
+        <!-- Song will be added later -->
+    </audio>
+    
+    <div class="hearts">💖 2 Months 💖</div>
+    
+    <div id="mainContent">
+        <div class="instructions">
+            <h1>Looking in your Eyes is the Best thing</h1>
+            <p>Click the bottle 20 times to wash it ashore!</p>
+            <div class="music-indicator" id="musicIndicator" style="display: none;">🎵 Music is playing...</div>
+        </div>
+
+        <div class="ocean">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="bottle-container clickable" id="bottle" style="bottom: 120px">
+                <div class="bottle">
+                    <div class="wine"></div>
+                    <div class="cork"></div>
+                    <div class="label">JM</div>
+                </div>
+            </div>
+            
+            <div class="sand"></div>
+        </div>
+
+        <div class="click-counter">
+            <div class="counter-bubble">
+                Clicks: <span class="count" id="clickCount">0</span>/20
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="message-container" id="messageContainer">
+        <div class="message">
+            <button class="close-btn" onclick="handleReset()">×</button>
+            <h2>For You Beautiful 💕</h2>
+            <div class="message-content">
+                <p>Happy 2 month anniversary, my love! 🥳</p>
+                <p>These past two months with you have been absolutely incredible. Every moment we share, every laugh, every conversation - it all means the world to me.</p>
+                <p>You make every day brighter just by being in it. I love your smile, your kindness, and the amazing person you are.</p>
+                <p>I KNOW I AM BAD AT KEEPING SECRETS like this one but,I Love you and Wanna make you Happy 💖</p>
+                <p class="signature">YOUR PERF MANZ,<br/>[Emmanuel YOURS Sakala] 💝</p>
+            </div>
+            <div class="music-controls">
+                <div class="music-note">🎵 Raindance: Dave💝...</div>
+                <button class="lyrics-btn" onclick="showLyrics()">View Lyrics 💫</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="message-container" id="lyricsContainer">
+        <div class="lyrics-page">
+            <button class="close-btn" onclick="handleReset()">×</button>
+            <button class="back-btn" onclick="backToMessage()">← Back to Message</button>
+            
+            <h2>RainDance Lyrics 💖</h2>
+            
+            <div class="current-lyric" id="currentLyric">
+                🎵 The music is playing...
+            </div>
+
+            <div class="lyrics-list" id="lyricsList">
+                <!-- Lyrics will be populated by JavaScript -->
+            </div>
+
+            <div class="music-info">
+                <div class="music-note">🎵 Like the song??</div>
+                <div class="time-marker" id="timeMarker">0:00</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating bubbles -->
+    <div class="bubble bubble-1"></div>
+    <div class="bubble bubble-2"></div>
+    <div class="bubble bubble-3"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
