@@ -8,7 +8,8 @@
 </head>
 <body>
     <audio id="audioPlayer" loop>
-        <!-- Song will be added later -->
+        <source src="songs/Dave - Raindance (feat. Tems) - 7Cakes.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
     </audio>
     
     <div class="hearts">💖 2 Months 💖</div>
@@ -44,7 +45,7 @@
         </div>
     </div>
 
-    <div class="message-container" id="messageContainer">
+    <div class="message-container" id="messageContainer" style="display: none;">
         <div class="message">
             <button class="close-btn" onclick="handleReset()">×</button>
             <h2>For You Beautiful 💕</h2>
@@ -62,7 +63,7 @@
         </div>
     </div>
 
-    <div class="message-container" id="lyricsContainer">
+    <div class="message-container" id="lyricsContainer" style="display: none;">
         <div class="lyrics-page">
             <button class="close-btn" onclick="handleReset()">×</button>
             <button class="back-btn" onclick="backToMessage()">← Back to Message</button>
@@ -70,7 +71,7 @@
             <h2>RainDance Lyrics 💖</h2>
             
             <div class="current-lyric" id="currentLyric">
-                🎵 The music is playing...
+                🎵 Click the bottle to start music...
             </div>
 
             <div class="lyrics-list" id="lyricsList">
